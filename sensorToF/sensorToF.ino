@@ -29,11 +29,11 @@ void setup()
 void loop() 
 {
   // Llamar la función de lectura
-  int distance = sensorToF.read(); 
+  int distance = sensorToF.read() / 10.0; 
 
   // Print datos recibidos ᓚᘏ𑄝
   Serial.print("Distancia: ");
   Serial.print(distance);
-  Serial.println(" mm");
+  Serial.println(" cm");
   delay(1000);
 }
